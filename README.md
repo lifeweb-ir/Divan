@@ -95,7 +95,7 @@ If you use this dataset in your research, please cite it as follows:
 #### BibTeX
 
     @dataset{divan_dataset,
-        author = {[Author Name]},
+        author = {[LifeWeb AI team]},
         title = {DIVAN: Diverse Valuable NLP Dataset for PERSIAN},
         year = {2024},
         publisher = {Hugging Face},

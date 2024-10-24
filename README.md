@@ -1,4 +1,3 @@
-
 # DIVAN – Diverse Valuable NLP Dataset for PERSIAN
 
 ## Overview

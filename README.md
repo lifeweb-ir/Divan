@@ -8,7 +8,7 @@ DIVAN is a comprehensive Persian (Farsi) dataset designed for various Natural La
 ## Dataset Details
 
 | Information | Description |
-|-------------|-------------|
+|:-------------:|:-------------:|
 | Dataset Name | DIVAN |
 | Language | Persian (Farsi) |
 | Domain | Social media, news, blogs |
@@ -69,13 +69,13 @@ Every part of the normalization is sequentially explained below:
 - calculating the ratio of Persian characters to the whole text and omitting non-Persian documents or ones that are considered Persian with a ratio of less than 80%.
 - breaking hashtags in a way that a space will be added after “#” and if there’s any “_” in between, a space will be added before and after them as well.
 
-There’s also another step to clean further the corpus called deduplication through which the total dataset gets assessed for the duplication ratio so that textual contents which are totally the same or more than 80% similar will get deleted.
+There’s also another step to further clean the corpus called deduplication through which the total dataset gets assessed for the duplication ratio so that textual contents which are totally the same or more than 80% similar will get deleted.
 
 
 ## Platform Statistics
 
 | Platform | Documents Count |
-|----------|:-----------------:|
+|:----------:|:-----------------:|
 | X(twitter) | 50,000,000 |
 | Telegram Channels | 15,000,000 |
 | Telegram Groups | 2,300,000 |

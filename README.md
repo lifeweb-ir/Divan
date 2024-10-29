@@ -13,7 +13,7 @@ DIVAN is a comprehensive Persian (Farsi) dataset designed for various Natural La
 | Domain | Social media, news, blogs |
 | Number of Samples | 100 million |
 | Number of Tokens | More than 8 billion |
-| Dataset License | CC BY-SA |
+| Dataset License | CC BY-SA 4.0 |
 | Sources | X(twitter), News, Telegram channels, Twitter, Wikipedia, Divar, DigiKala, etc. |
 | Tasks | Fill-Mask (MLM), Text Generation, etc. |
 
@@ -21,10 +21,10 @@ DIVAN is a comprehensive Persian (Farsi) dataset designed for various Natural La
 
 You can install and load this dataset using Hugging Face's datasets library:
 
-1. Install the datasets library:
-   ```bash
-   pip install datasets
-   ```
+- Install the datasets library
+```bash
+pip install datasets
+```
 
 ## Dataset Structure
 
@@ -37,22 +37,30 @@ The outputs are saved as 1 million-record parquet files which are accessible in 
 
 ## Usage Example
 
-Load the dataset
-   ```python
-   from datasets import load_dataset
+- Load the dataset
+```python
+from datasets import load_dataset
 
-   platform_title = 'news'
-   dataset = load_dataset("lifeweb-ai/Divan", data_files='{}/*.parquet'.format(platform_title), token='HF_TOKEN')
-   ```
-Access a sample
-   ```python
-   dataset['train'][0]
-   ```
+dataset = load_dataset("lifeweb-ai/Divan", token='HF_TOKEN')
+```
+
+- Load a specific platform
+```python
+from datasets import load_dataset
+
+platform_title = 'news'
+dataset = load_dataset("lifeweb-ai/Divan", data_files='{}/*.parquet'.format(platform_title), token='HF_TOKEN')
+```
+
+- Access a sample
+```python
+dataset['train'][0]
+```
 
 
 ## Dataset Creation
 
-After selecting the textually rich platforms the aimed data were retrieved and with the help of applying normalization to the initial corpus, the text got as clean as possible while any unnecessary character for learning different NLP models or not related to the Persian Language were omitted. 
+After selecting the textually rich platforms the aimed data were retrieved and with the help of applying normalization to the initial corpus, the text got as clean as possible while any unnecessary characters for learning different NLP models or not related to the Persian Language were omitted. 
 
 Every part of the normalization is sequentially explained below:
 
@@ -68,7 +76,7 @@ Every part of the normalization is sequentially explained below:
 - calculating the ratio of Persian characters to the whole text and omitting non-Persian documents or ones that are considered Persian with a ratio of less than 80%.
 - breaking hashtags in a way that a space will be added after “#” and if there’s any “_” in between, a space will be added before and after them as well.
 
-There’s also another step to further clean the corpus called deduplication through which the total dataset gets assessed for the duplication ratio so that textual contents which are totally the same or more than 80% similar will get deleted.
+There’s also another step to further clean the corpus called deduplication through which the total dataset gets assessed for the duplication ratio so that textual contents that are the same or more than 80% similar will get deleted.
 
 
 ## Platform Statistics
@@ -103,7 +111,7 @@ If you use this dataset in your research, please cite it as follows:
 
 ## License
 
-This dataset is licensed under the [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en) license. For more details, please refer to the LICENSE file in this repository.
+This dataset is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en) license. For more details, please refer to the LICENSE file in this repository.
 
 
 ## Contact

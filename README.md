@@ -14,7 +14,7 @@ DIVAN is a comprehensive Persian (Farsi) dataset designed for various Natural La
 | Number of Samples | 100 million |
 | Number of Tokens | More than 8 billion |
 | Dataset License | CC BY-SA 4.0 |
-| Sources | X(twitter), News, Telegram channels, Twitter, Wikipedia, Divar, DigiKala, etc. |
+| Sources | X(twitter), News, Telegram channels, Wikipedia, Divar, DigiKala, etc. |
 | Tasks | Fill-Mask (MLM), Text Generation, etc. |
 
 ## Installation
